@@ -27,6 +27,7 @@ body{
     border-bottom: 1px solid hsl(0, 0%, 86%);
     padding-bottom: 40px;
     margin: 20px 0;
+    height: 125px;
 }
 .input{
     display: flex;
@@ -45,6 +46,9 @@ label{
 }
 .form-input:focus{
     outline: none;
+}
+.errorMsg{
+    font-size: 12px;
 }
 /*Removing Wheel*/
 /* Hide the number input arrow buttons in WebKit */
