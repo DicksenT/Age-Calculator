@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 28px;
+    border-bottom-right-radius: 100px;
+}
+.form{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding-bottom: 40px;
+    margin: 20px 0;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+label{
+    color: grey;
+    font-size: 14px;
+}
+.form-input{
+    padding: 8px;
+    border-radius: 6px;
+    border-color: hsl(0, 0%, 94%);
+    border-width: 1px;
+}
+.form-input:focus{
+    outline: none;
+}
+/*Removing Wheel*/
+/* Hide the number input arrow buttons in WebKit */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Hide the number input arrow buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 26px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+.btn img{
+    width: 25px;
+    height: 25px;
+}
+.result{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    gap: 8px;
+}
+.number{
+    color: hsl(259, 100%, 65%);
+}
+
+@media(min-width:1024px){
+    .container{
+        width: 600px;
+    }
+    .form{
+        justify-content: start;
+        gap: 20px;
+        width: 90%;
+    }
+    .input{
+        width: 120px;
+    }
+    .form-input{
+        padding: 12px;
+        font-size: 20px;
+    }
+    .btn{
+        left: 100%;
+        width: 72px;
+        height: 72px;
+        border-radius: 40px;
+        bottom: -36px;
+    }
+    .btn img{
+        width: 36px;
+        height: 36px;
+    }
+    .result{
+        font-size: 60px;
+    }
+    .number{
+        letter-spacing: 8px;
+    }
+}
