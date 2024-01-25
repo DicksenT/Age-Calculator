@@ -38,17 +38,12 @@ label{
     color: grey;
     font-size: 14px;
 }
-.form-input{
-    padding: 8px;
-    border-radius: 6px;
-    border-color: hsl(0, 0%, 94%);
-    border-width: 1px;
-}
-.form-input:focus{
-    outline: none;
-}
+
 .errorMsg{
     font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
 }
 /*Removing Wheel*/
 /* Hide the number input arrow buttons in WebKit */
@@ -56,11 +51,21 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"] {
   -webkit-appearance: none;
-  margin: 0;
 }
 /* Hide the number input arrow buttons in Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+.form-input{
+    padding: 8px;
+    border-radius: 6px;
+    border-color: hsl(0, 0%, 94%);
+    border-width: 1px;
+    margin-bottom: 4px;
+    outline: none;
+}
+.form-input:focus{
+    outline: none;
 }
 .btn{
     width: 50px;
