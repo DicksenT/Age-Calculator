@@ -102,7 +102,7 @@ form.addEventListener("submit", (e) => {
 
     //Number Counting
     function numUp(num, finalNum) {
-      let interval = 1000;
+      let interval = 500;
       let start = -1;
       let end = finalNum;
       let duration = interval / end;
