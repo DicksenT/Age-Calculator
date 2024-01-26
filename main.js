@@ -28,9 +28,9 @@ function errorCheck() {
   function validateError(errorInput, errorElement, errorMessage) {
     if (errorInput.value === "" || errorInput.value == null) {
       error(errorElement, "This field is required");
+      noError = false;
     } else if (
-      !(errorInput.value >= 1) &&
-      !(errorInput === yearInput
+      !(errorInput.value >= 1 && errorInput === yearInput
         ? errorInput.value <= now.getFullYear()
         : errorInput === monthInput
         ? errorInput.value <= 12
